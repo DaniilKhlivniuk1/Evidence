@@ -1,67 +1,67 @@
 <section class="services">
     <div class="container">
-<h2 class="services__title">Послуги та  вартість</h2>
+<h2 class="services__title">Services and Prices</h2>
 
 <ul class="services__list">
     <li class="services__item">
         <svg class="services__svg">
             <use href="./img/symbol-defs.svg#baby"></use>
         </svg>
-        <p class="services__text">Педіатрія</p>
+        <p class="services__text">Pediatrics</p>
     </li>
     <li class="services__item">
         <svg class="services__svg">
             <use href="./img/symbol-defs.svg#syringe"></use>
         </svg>
-        <p class="services__text">Вакцинація</p>
+        <p class="services__text">Vaccination</p>
     </li>
     <li class="services__item">
         <svg class="services__svg">
             <use href="./img/symbol-defs.svg#elbow"></use>
         </svg>
-        <p class="services__text">Ортопед</p>
+        <p class="services__text">Orthopedics</p>
     </li>
     <li class="services__item">
         <svg class="services__svg">
             <use href="./img/symbol-defs.svg#stomach"></use>
         </svg>
-        <p class="services__text">Гастроентеролог</p>
+        <p class="services__text">Gastroenterology</p>
     </li>
     <li class="services__item">
         <svg class="services__svg">
             <use href="./img/symbol-defs.svg#tooth"></use>
         </svg>
-        <p class="services__text">Стоматолог</p>
+        <p class="services__text">Dentistry</p>
     </li>
     <li class="services__item">
         <svg class="services__svg">
             <use href="./img/symbol-defs.svg#doctor"></use>
         </svg>
-        <p class="services__text">Нефрролог</p>
+        <p class="services__text">Nephrology</p>
     </li>
     <li class="services__item">
         <svg class="services__svg">
             <use href="./img/symbol-defs.svg#heart"></use>
         </svg>
-        <p class="services__text">Кардіолог</p>
+        <p class="services__text">Cardiology</p>
     </li>
     <li class="services__item">
         <svg class="services__svg">
             <use href="./img/symbol-defs.svg#kidney"></use>
         </svg>
-        <p class="services__text">Уролог</p>
+        <p class="services__text">Urology</p>
     </li>
     <li class="services__item">
         <svg class="services__svg">
             <use href="./img/symbol-defs.svg#laboratory"></use>
         </svg>
-        <p class="services__text">Лабораторія</p>
+        <p class="services__text">Laboratory</p>
     </li>
     <li class="services__item">
         <svg class="services__svg">
             <use href="./img/symbol-defs.svg#arrow"></use>
         </svg>
-        <p class="services__text">Дивитись ще</p>
+        <p class="services__text">See More</p>
     </li>
 </ul>
 <div class="slider">
@@ -70,37 +70,38 @@
             <svg class="services__svg">
                 <use href="./img/symbol-defs.svg#baby"></use>
             </svg>
-            <p class="services__text">Педіатрія</p>     </div>
+            <p class="services__text">Pediatrics</p>     
+        </div>
         <div class="slide">
             <svg class="services__svg">
                 <use href="./img/symbol-defs.svg#syringe"></use>
             </svg>
-            <p class="services__text">Вакцинація</p> 
+            <p class="services__text">Vaccination</p> 
         </div>
         <div class="slide">
             <svg class="services__svg">
                 <use href="./img/symbol-defs.svg#elbow"></use>
             </svg>
-            <p class="services__text">Ортопед</p> 
+            <p class="services__text">Orthopedics</p> 
         </div>
         <div class="slide">
             <svg class="services__svg">
                 <use href="./img/symbol-defs.svg#stomach"></use>
             </svg>
-            <p class="services__text">Гастроентеролог</p>
+            <p class="services__text">Gastroenterology</p>
         </div>
         <div class="slide">
             <svg class="services__svg">
                 <use href="./img/symbol-defs.svg#tooth"></use>
             </svg>
-            <p class="services__text">Стоматолог</p>
+            <p class="services__text">Dentistry</p>
         </div>
         <div class="slide">
             <svg class="services__svg">
                 <use href="./img/symbol-defs.svg#arrow"></use>
             </svg>
-            <p class="services__text">Дивитись ще</p>
-    </div>
+            <p class="services__text">See More</p>
+        </div>
     </div>
     <div class="nav-dots">
         <button class="dot active" data-index="0"></button>
@@ -116,10 +117,10 @@
     const sliderContainer = document.querySelector('.slider-container');
     const slides = document.querySelectorAll('.slide');
     const dots = document.querySelectorAll('.dot');
-    const totalSlides = Math.ceil(slides.length / 3); // Количество слайдов для точек навигации
+    const totalSlides = Math.ceil(slides.length / 3); // Number of slides for navigation dots
 
     function updateSlider() {
-        const offset = -currentIndex * (100 / 3); // Перемещение на ширину одного слайда
+        const offset = -currentIndex * (100 / 3); // Shift by the width of one slide
         sliderContainer.style.transform = `translateX(${offset}%)`;
         dots.forEach((dot, index) => {
             dot.classList.toggle('active', index === currentIndex);
