@@ -1,0 +1,64 @@
+<div class="backdrop" data-modal>
+<section class="registration">
+    <picture>
+        <source srcset="./img/desktop/logo@1x-desktop.webp 1x , ./img/desktop/logo@2x-desktop.webp 2x"
+            media="(min-width: 1766px)">
+        <source srcset="./img/tablet/logo@1x-tablet.webp 1x , ./img/tablet/logo@2x-tablet.webp 2x"
+            media="(min-width: 1334px)">
+        <source srcset="./img/mobile/logo@1x-mobile.webp 1x , ./img/mobile/logo@2x-mobile.webp 2x"
+            media="(max-width: 1333px)">
+        <img class="registration__logo" src="./img/desktop/logo@1x-desktop.webp" alt="">
+    </picture>
+    <button data-modal-close>
+        <svg class="registration__modal"  width="24" height="24">
+            <use href="./img/symbol-defs.svg#close-menu"></use>
+        </svg>
+    </button>
+    <div class="container registration__container">
+      <div class="registration__photod">
+        <picture>
+          <source srcset="./img/desktop/portfolio-help@1x-desktop.webp 1x, ./img/desktop/portfolio-help@2x-desktop.webp 2x" media="(min-width: 1280px)">
+          <source srcset="./img/tablet/registration/registration-photo@1x-tablet.webp 1x, ./img/tablet/registration/registration-photo@2x-tablet.webp 2x" media="(min-width: 736px)">
+          <source srcset="../img/mobile/registration/hero-photo@1x-mobile.webp ./img/mobile/registration/hero-photo@2x-mobile.webp" media="(min-width: 310px)">
+          <img class="registration__photo" src="./img/desktop/portfolio-help@1x-desktop.webp" alt="" />
+        </picture>
+      </div>
+      <form class="registration__form">
+        <h2 class="registration__title">Допоможемо знайти лікаря</h2>
+        <ul class="registration__roll">
+          <li class="registration__element">
+            <input
+              type="text"
+              class="registration__input"
+              placeholder="Як до вас звернутись?"
+              required
+            />
+          </li>
+          <li class="registration__element">
+            <input type="tel" class="registration__input" placeholder="+380(___) ___ -__-__" required/>
+          </li>
+        </ul>
+        <div class="registration__select">
+          <p class="registration__text">Як з Вами краще зв’язатись?</p>
+          <div class="registration__select">
+            <div class="registration__wrap">
+              <input type="radio" class="registration__choose" id="registration__choose" name="choose" value="viber" checked/>
+              <label for="viber" class="registration__label">Напишіть мені на Viber</label>
+            </div>
+            <div class="registration__wrap">
+              <input type="radio" class="registration__choose" id="registration__choose2" name="choose" value="tel"/>
+              <label for="tel" class="registration__label">Подзвоніть мені</label>
+            </div>
+          </div>
+        </div>
+        <button
+          class="registration__button registration__button-desktop" type="submit"> Відправити
+        </button>
+        <button class="registration__button registration__button-mobile" type="submit">
+          Зателефонуйте
+        </button>
+      </form>
+    </div>
+  </section>
+</div>
+  

@@ -1,0 +1,187 @@
+.hero {
+    padding-top: 200px;
+    padding-bottom: 69px;
+    position: relative;
+    background-image: url(../img/mobile/hero/registration-photo@1x-mobile.webp);
+    background-repeat: no-repeat;
+    background-size: 320px 368px;
+    @media screen and (min-width: 440px) {
+        background-position: 115px 0px;
+    }
+
+    @media screen and (min-width: 440px) {
+        background-position: 175px 0px;
+    }
+
+    @media screen and (min-width: 670px) {
+        background-position: 225px 0px;
+    }
+
+    @media screen and (min-width: 790px) {
+        background-position: 260px 0px;
+    }
+
+    @media screen and (min-width: 790px) {
+        background-position: 315px 0px;
+    }
+
+    @media screen and (min-width: 940px) {
+        background-position: 355px 0px;
+    }
+
+    @media screen and (min-width: 1010px) {
+        background-position: 400px 0px;
+    }
+
+    @media screen and (min-width: 1120px) {
+        background-position: 510px 0px;
+    }
+
+    @media screen and (min-width: 1220px) {
+        background-position: 540px 0px;
+    }
+
+    @media screen and (min-width: 1300px) {
+        background-position: 525px 0px;
+    }
+
+    @media screen and (min-width: 1334px) {
+        background-image: url(../img/desktop/hero@1x-desktop.webp) , url(../img/tablet/hero/hero-bg@1x-tablet.webp);
+        background-repeat: no-repeat;
+        background-size: 482px 604px , 537px 631px;
+        background-position: 810px 177px , 785px 150px;
+        padding-top: 218px;
+        padding-bottom: 90px;
+
+        @media screen and (min-width: 1400px) {
+            background-position: 925px  177px, 900px 150px;
+        }
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../img/desktop/hero@1x-desktop.webp) , url(../img/tablet/hero/hero-bg@1x-tablet.webp);
+        }
+    }
+
+    @media screen and (min-width: 1766px) {
+        background-image: url(../img/desktop/hero@1x-desktop.webp) , url(../img/desktop/hero-bg@1x-desktop.webp);
+        background-repeat: no-repeat;
+        background-size: 678px 849px , 756px 888px;
+        background-position: 935px 190px , 900px 150px;
+        padding-top: 285px;
+        padding-bottom: 69px;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../img/desktop/hero@1x-desktop.webp) , url(../img/desktop/hero-bg@1x-desktop.webp);
+        }
+    }
+
+
+    &__title {
+        color: $blue-text-color;
+        font-family: Montserrat;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 0.45;
+        margin-bottom: 40px;
+
+        @media screen and (min-width: 450px) {
+            font-size: 64px;
+        }
+
+        @media screen and (min-width: 1334px) {
+            font-size: 99px;
+            font-weight: 300;
+        }
+
+        @media screen and (min-width: 1766px) {
+            font-size: 140px;
+            line-height: 0.45;
+        }
+    }
+
+    &__text {
+        color: $blue-text-color;
+        font-family: "Open Sans";
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.83;
+        margin-bottom: 80px;
+    }
+
+    &__btn {
+        color: $white-input;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.12;
+        display: flex;
+        width: 100%;
+        height: 46px;
+        justify-content: center;
+        align-items: center;
+        background-color: $blue-text-color;
+        border-radius: 50px;
+        border: none;
+
+        @media screen and (min-width: 1334px) {
+            width: 636px;
+            height: 80px;
+            padding: 20px;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 1.37;
+        }
+    }
+
+    &__icon {
+        fill: transparent;
+        stroke: $svg-color;
+        margin-bottom: 16px;
+        margin-left: 10px;
+
+        @media screen and (min-width: 1334px) {
+            margin-left: 22px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        margin-top: 75px;
+
+        @media screen and (min-width: 1334px) {
+            margin-top: 150px;
+        }
+
+        @media screen and (min-width: 1766px) {
+            margin-top: 350px;
+        }
+    }
+
+    &__texts {
+        margin-right: 35px;
+        color: $text-color;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.28;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (min-width: 450px) {
+            margin-right: 40px;
+        }
+
+        @media screen and (min-width: 1334px) {
+            margin-right: 138px;
+        }
+    }
+
+
+    // &__item {
+    //     margin-right: 10px;
+    // }
+}

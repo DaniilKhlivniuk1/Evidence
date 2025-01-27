@@ -1,0 +1,69 @@
+<header class="header">
+    <div class="container header__container">
+
+        <button type="button" class="header__menu" data-menu-open>
+            <svg class="header__icon">
+                <use href="./img/symbol-defs.svg#menu"></use>
+            </svg>
+        </button>
+
+        <picture>
+            <source srcset="./img/desktop/logo@1x-desktop.webp 1x , ./img/desktop/logo@2x-desktop.webp 2x"
+                media="(min-width: 1766px)">
+            <source srcset="./img/tablet/logo@1x-tablet.webp 1x , ./img/tablet/logo@2x-tablet.webp 2x"
+                media="(min-width: 1334px)">
+            <source srcset="./img/mobile/logo@1x-mobile.webp 1x , ./img/mobile/logo@2x-mobile.webp 2x"
+                media="(max-width: 1333px)">
+            <img class="header__logo" src="./img/desktop/logo@1x-desktop.webp" alt="">
+        </picture>
+
+        <svg class="header__search">
+            <use href="./img/symbol-defs.svg#search"></use>
+        </svg>
+
+
+
+        <ul class="header__list">
+            <li class="header__item">
+                <a class="header__link" href="./index.html">Про нас</a>
+            </li>
+            <li class="header__item">
+                <a class="header__link" href="./doctors.html">Лікарі</a>
+            </li>
+            <li class="header__item">
+                <a class="header__link" href="">Вартість</a>
+            </li>
+            <li class="header__item">
+                <a class="header__link" href="">Запитання</a>
+            </li>
+            <li class="header__item">
+                <a class="header__link" href="">Відгуки</a>
+            </li>
+            <li class="header__item">
+                <a class="header__link" href="">Контакти</a>
+            </li>
+        </ul>
+
+        <button type="button" onclick="toggleText()">
+            <svg class="header__prof">
+                <use href="./img/symbol-defs.svg#profile"></use>
+            </svg>
+        </button>
+
+        <ul class="header__section" id="hiddenText">
+            <li class="header__items">
+                <p class="header__text">Пацієнт</p>
+            </li>
+            <li class="header__items">
+                <p class="header__text">Лікар</p>
+            </li>
+        </ul>
+
+        <!-- <button type="button" class="header__profile">
+            <svg class="header__prof"">
+                <use href=""></use>
+            </svg>
+        </button> -->
+
+    </div>
+</header>

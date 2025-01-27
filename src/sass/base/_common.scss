@@ -1,0 +1,12 @@
+body {
+    font-family: Open Sans;
+}
+body {
+    font-family: "Open sans";
+    background-color: $background-color;
+}
+
+*::selection {
+    background-color: $dark-accent-color;
+    color: $additional-color;
+}

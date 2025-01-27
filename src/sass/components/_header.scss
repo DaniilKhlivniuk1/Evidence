@@ -1,0 +1,147 @@
+.header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    @media screen and (min-width: 1334px) {
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
+
+    @media screen and (min-width: 1766px) {
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__list {
+        display: none;
+
+        @media screen and (min-width: 1334px) {
+            display: flex;
+            margin-left: 450px;
+        }
+
+        @media screen and (min-width: 1766px) {
+            margin-left: 700px;
+        }
+    }
+
+    &__link {
+        display: none;
+        color: $text-color;
+        font-family: "Open Sans";
+        font-weight: 400;
+        line-height: 0.45;
+        text-decoration: none;
+
+        @media screen and (min-width: 1334px) {
+            display: flex;
+            font-size: 14px;
+            line-height: 0.45;
+            margin-right: 30px;
+        }
+
+        @media screen and (min-width: 1766px) {
+            margin-right: 40px;
+        }
+
+        &:hover {
+            color: $svg-color;
+        }
+    }
+
+    &__menu {
+        margin-right: 56px;
+
+        @media screen and (min-width: 1334px) {
+            display: none;
+        }
+
+    }
+
+    &__icons {
+        fill: transparent;
+        stroke: $svg-color;
+        width: 186px;
+        height: 48px;
+
+        @media screen and (min-width: 1334px) {
+            width: 172px;
+            height: 50px;
+        }
+
+        @media screen and (min-width: 1766px) {
+            width: 200px;
+            height: 55px;
+        }
+    }
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+        stroke: $svg-color;
+    }
+
+    &__search {
+        width: 24px;
+        height: 24px;
+        fill: transparent;
+        stroke: $svg-color;
+        margin-left: 56px;
+
+        @media screen and (min-width: 1334px) {
+            display: none;
+        }
+    }
+
+    &__prof {
+        display: none;
+
+        @media screen and (min-width: 1334px) {
+            display: flex;
+            fill: transparent;
+            stroke: $svg-color;
+            width: 29px;
+            height: 28px;
+        }
+
+
+        @media screen and (min-width: 1766px) {
+            width: 42px;
+            height: 42px;
+        }
+    }
+
+    &__logo {
+
+        @media screen and (min-width: 1334px) {
+            width: 185px;
+        }
+    }
+
+    &__section {
+        display: none;
+        border-radius: 20px;
+        border: 1px solid var(--blue-blue, #72B7F2);
+    }
+
+    &__items {
+        margin: 16px;
+    }
+
+    &__text {
+        display: none;
+
+        @media screen and (min-width: 1334px) {
+            display: flex;
+        }
+    }
+
+    &__text:hover {
+        color: $svg-color;
+    }
+}
